@@ -5,6 +5,6 @@ RUN apt-get update && \
 
 COPY . /src
 
-RUN npm install
+RUN cd /src && npm install
 
 CMD ["node", "/src/app.js"]
